@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5f082481d.js" crossorigin="anonymous"></script>
+    <title>Alejandro Sánchez Torres</title>
+</head>
+
+<body style="background-color: black;">
+  
+    
+
+     <div class="vertical carousel slide" data-ride="carousel">
+
+     </div>
+    
+     <div class="C-carousel">
+        <div class="C-slide"><div class="C-slide-title">  
+             <div class="container">
+            <pre id="typewriter">
+                <span class="var-highlight">Developer</span> Alex = new Developer(
+                    surname: <span class="string-highlight">'Sánchez Torres'</span>,
+                    type: <span class="string-highlight">'Junior'</span>,
+                    location: <span class="string-highlight">'Spain'</span>,
+                    properties:[<span class="string-highlight">'Java'</span>,
+                                <span class="string-highlight">'MYSQL'</span>,
+                                <span class="string-highlight">'Android Studio'</span>
+                                <span class="string-highlight">'Python'</span>
+                                <span class="string-highlight">'JS'</span>];
+                ); 
+            </pre>
+        </div>
+    </div>
+</div>
+        <div id="slide2" class="C-slide">
+            <div class="C-slide-title">
+
+                
+                
+                    <div id="carouselimages" style="width:100vw ;" class="owl-carousel">
+                        <div> <a class="btne cta bg">Boton1</a> </div>
+                        <div> <a class="btne cta bg">Boton2</a> </div>
+                        <div> <a class="btne cta bg">Boton3</a> </div>
+                        <div> <a class="btne cta bg">Boton4</a> </div>
+                        <div> <a class="btne cta bg">Boton5</a> </div>
+
+                    
+                      </div>
+     
+
+              
+                     
+            </div>
+         
+         <!-- <div class="dropdown"  id="but" style="visibility: hidden;">
+            <input type="checkbox" id="dropdown">
+          
+            <label class="dropdown__face" for="dropdown">
+              <div class="dropdown__text">Create Methods</div>
+          
+              <div class="dropdown__arrow"></div>
+            </label>
+          
+            <ul class="dropdown__items">
+              <li><a href="portfolio.html"><p class="var-highlight">Alex</p><p class="string-highlight">.portfolio();</p></a></li>
+              <li><p></p></li>
+              <li><a href="aboutme.html"><p class="var-highlight">Alex</p><p class="string-highlight">.aboutme();</p></a></li>
+            </ul>
+            
+            
+          </div> -->
+          
+          <!-- <svg>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </svg>    -->
+         </div> 
+        
+  </div>
+        <div id="slide3" class="C-slide">
+            <div style="font-size: medium; color:black" class="C-slide-title">
+
+                I am Alejandro Sánchez Torres, a Junior Programmer, who tries to learn something new everyday.</br> </br>
+                Technician in Microcomputer Systems and Networks, and currently studying Multi-platform Applications Development. <br></br>
+                Experince with Java, SQL, Python, Android Studio, HTML, CSS, JS, JSON, MongoDB, Windows and Linux.<br></br>
+                I love comics, movies and videogames, in fact my dream is to become a videogame programmer.<br></br>
+                It would be great to know that people enjoy my projects, apps and other types of programming. <br></br>
+                If you want to contact me, click on any of the buttons below.
+                
+                </div>
+        </div>
+    </div>
+        <div class="C-slide">
+            <div class="C-slide-title">
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="https://github.com/Salexmineralex" target="blank"><i class=" fabs fa-brands fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/alejandro-sánchez-torres" target="blank"><i class="fabs fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="mailto:alex.malex190@gmail.com" target="blank"><i class="fabs fa-brands fa-google"></i></a></li>
+                        <li><a download="filename" href="./CV Alejandro Sanchez Torres V3.pdf" target="blank"><i class="fabs fa-solid fa-file-arrow-down"></i></a></li>
+             
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="C-slide"><div class="C-slide-title">Slide 5</div></div>
+      </div>
+     
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="./owl.carousel.min.js"></script>
+<script type="text/javascript">
+
+    var data;
+    //fetch('./data.json',{ mode: 'no-cors'})
+    //.then((response) => response.json()
+    //.then((json) => console.log(json)));
+
+    function loadJSON(callback) {   
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', './data.json', true);
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(xobj.responseText);
+          }
+        };
+        xobj.send(null);  
+      }
+
+
+      loadJSON(function(json) {
+         // this will log out the json object
+        console.log(json);
+        data = $.parseJSON(json);
+        
+        console.log(data)
+
+        setUpButtons()
+      });
+
+    
+    
+    function setUpButtons()
+    {
+        for (const [key, value] of Object.entries(data.projects)) {
+            console.log(`${key}: ${value}`);
+          }
+          
+    }
+
+
+
+
+
+    class Carousel {
+        constructor(el, options = {}) {
+          const DEFAULTS = {
+            infinite : true,
+            slideSelector: '.C-slide',
+            initialSlideIndex: 0,
+            vertical: false,
+          };
+          this.carousel = el;
+          this.settings = {
+            ...DEFAULTS,
+            ...options,
+          };
+      
+          this.slides = document.querySelectorAll(
+            this.settings.slideSelector
+          );
+      
+          this.state = {
+            currentSlide: this.settings.initialSlideIndex,
+          };
+      
+          this.track = null;
+          this.navigation = null;
+          this.navigationButtons = [];
+      
+          // Init
+          this.init();
+        }
+      
+        setState(newState, callback = () => undefined) {
+          this.state = {
+            ...this.state,
+            ...newState,
+          };
+          this.updateCarousel();
+          return callback();
+        }
+        
+        getSettings = () => {
+          return this.settings;
+        }
+      
+        reInitWithOptions = (options = {}) => {
+          this.carousel.classList.remove('initialized');
+          this.track.classList.add('C-track--reinit');
+          this.settings = {
+            ...this.getSettings(),
+            ...options,
+          };
+          
+          this.init();
+          this.onResizeActions();
+          this.track.classList.remove('C-track--reinit');
+        };
+      
+        init() {
+          const {
+            carousel,
+            slides,
+          } = this;
+      
+          const {
+            vertical,
+          } = this.settings;
+      
+          carousel.classList.remove('C-carousel--vertical');
+          carousel.classList.remove('C-carousel--horizontal');
+          if (vertical) {
+            carousel.classList.add('C-carousel--vertical');
+          } else {
+            carousel.classList.add('C-carousel--horizontal');
+            slides.forEach(slide => {
+              slide.style.float = 'left';
+            });
+          }
+      
+          this.onInitActions();
+      
+          window.addEventListener('resize', () => {
+            setTimeout(() => { this.onResizeActions(); }, 100);
+          });
+      
+        }
+      
+        onInitActions() {
+          this.createSlideTrack();
+          this.createNavigation();
+          this.createNavigationButtons();
+          this.updateCarousel();
+          this.carousel.classList.add('initialized');
+        }
+      
+        onResizeActions() {
+          this.setSlideTrackDimensions();
+        }
+      
+        createSlideTrack() {
+          const {
+            slides,
+            carousel,
+            track,
+          } = this;
+          
+          // Do not re-create track if it exists
+          if(!track) {
+            const track = document.createElement('div');
+            track.classList.add('C-track');
+            slides.forEach(slide => {
+              track.appendChild(slide);
+            });
+      
+            carousel.appendChild(track);
+            this.track = track;
+          }
+          this.setSlideTrackDimensions();
+        }
+      
+        setSlideTrackDimensions() {
+      
+          const {
+            track,
+            slides,
+          } = this;
+          slides.forEach(slide => {
+            slide.style.transition = 'none';
+          });
+          const numberOfSlides = slides.length;
+      
+          if (!track) { return; }
+      
+          const {
+            vertical,
+          } = this.settings;
+      
+          const height = [...slides].reduce((acc, slide) => (
+            acc + slide.offsetHeight
+          ), 0);
+          const width = [...slides].reduce((acc, slide) => (
+            acc + slide.offsetWidth
+          ), 0);
+          
+          track.style.transition = 'none';
+      
+          if (!!vertical) {
+            track.style.width = width / numberOfSlides + 'px';
+            track.style.height = height + 'px';
+          } else {
+            track.style.width = width + 'px';
+            track.style.height = height / numberOfSlides + 'px';
+          }
+      
+          track.style.transition = '';
+          slides.forEach(slide => {
+            slide.style.transition = '';
+          });
+        }
+      
+        updateTrackPosition() {
+          const {
+            slides,
+            track,
+          } = this;
+      
+          const numberOfSlides = slides.length;
+          const basePercentage = 100 / numberOfSlides;
+      
+          const {
+            vertical,
+          } = this.settings;
+      
+          const {
+            currentSlide,
+          } = this.state;
+      
+          const translateValue = !!vertical
+          ? `translateY(-${basePercentage * currentSlide}%)`
+          : `translateX(-${basePercentage * currentSlide}%)`
+      
+          track.style.transform = translateValue;
+      
+        }
+      
+        createNavigation () {
+          const {
+            slides,
+            carousel,
+            navigation,
+          } = this;
+          
+          if (!navigation) {
+            const navigationContainer = document.createElement('div');
+            navigationContainer.classList.add('C-navigation');
+            [...slides].forEach((slide, index) => {
+              navigationContainer.appendChild(this.createNavigationDot(index));
+            });
+            carousel.appendChild(navigationContainer);
+            this.navigation = navigationContainer; 
+          }
+        }
+      
+        createNavigationDot(index) {
+          const { currentSlide } = this.state;
+          const navigationDot = document.createElement('div');
+          navigationDot.classList.add('C-navigation__dot');
+          navigationDot.classList.add('but');
+          navigationDot.setAttribute('data-slideIndex', index);
+          navigationDot.style.visibility = "hidden"
+          navigationDot.addEventListener('click', () => {
+            this.goTo(index);
+          });
+      
+          return navigationDot;
+        }
+      
+        createNavigationButtons() {
+          const createNavigationButton = (buttonType) => {
+            const { carousel } = this;
+            const navigationButton = document.createElement('button');
+            navigationButton.setAttribute('type', 'button');
+            navigationButton.classList.add('C-carousel-navigation-button');
+            navigationButton.classList.add('but');
+
+            navigationButton.style.visibility = "hidden"
+            navigationButton.classList.add(`C-carousel-navigation-button--${buttonType}`);
+            navigationButton.addEventListener('click', () => {
+              const { slides } = this;
+              const { currentSlide } = this.state;
+              const numberOfSLides = slides.length;
+              const lastSlideIndex = numberOfSLides - 1;
+              
+              if (buttonType === 'next') {
+           
+                const slideToGo = currentSlide + 1;
+                if (slideToGo > lastSlideIndex) {
+                  if(!!this.settings.infinite) {
+                    return this.goTo(0);
+                  }
+                  return;
+                } else {
+                  this.goTo(slideToGo);
+                }
+                
+              } else {
+             
+                const slideToGo = currentSlide - 1;
+                if (slideToGo < 0) {
+                  if(!!this.settings.infinite) {
+                    return this.goTo(lastSlideIndex);
+                  }
+                  return;
+                } else {
+                  this.goTo(slideToGo);
+                }
+              }
+            });
+     
+            if(buttonType == "next")
+            {
+                navigationButton.id = "next"
+                navigationButton.addEventListener("click",comprobarboton);
+                navigationButton.style.right = "50%"
+                const downarrowkey = document.createElement('i');
+                downarrowkey.classList.add("fa-solid")
+                downarrowkey.classList.add("fa-angles-down")
+                downarrowkey.classList.add("shake-vertical")
+
+                navigationButton.appendChild(downarrowkey)
+            }else
+            {
+                navigationButton.id = "prev"
+                navigationButton.addEventListener("click",comprobarboton);
+                navigationButton.style.right = "50%"
+                navigationButton.style.top = "1%"
+                navigationButton.style.bottom = "94%"
+                const downarrowkey = document.createElement('i');
+                downarrowkey.classList.add("fa-solid")
+                downarrowkey.classList.add("fa-angles-up")
+                downarrowkey.classList.add("shake-vertical")
+
+                navigationButton.appendChild(downarrowkey)
+            }
+            carousel.appendChild(navigationButton);
+            this.navigationButtons.push(navigationButton);
+          }
+          
+          if (this.navigationButtons.length <= 0) {
+            createNavigationButton('next');
+            createNavigationButton('prev');
+          } 
+        }
+      
+        updateNavigation() {
+          const {
+            navigation,
+          } = this;
+      
+          const {
+            currentSlide,
+          } = this.state;
+      
+          const navigationDots = navigation.querySelectorAll('.C-navigation__dot');
+          navigationDots.forEach(dot => {
+            const dotIndex = parseInt(dot.getAttribute('data-slideIndex'), 10);
+            if (dotIndex === currentSlide) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+      
+        updateSlides() {
+          const {
+            slides,
+          } = this;
+      
+          const {
+            currentSlide,
+          } = this.state;
+      
+          slides.forEach((slide, index) => {
+            if (index === currentSlide) {
+              slide.classList.add('active');
+            } else {
+              slide.classList.remove('active');
+            }
+          });
+        }
+      
+        goTo = (index) => {
+          this.setState({
+            currentSlide: index,
+          }, () => {
+            //console.log('Current slide is now: ', this.state.currentSlide);
+          });
+        }
+      
+        updateCarousel() {
+          this.updateTrackPosition();
+          this.updateNavigation();
+          this.updateSlides();
+        }
+      
+      }
+      
+      const registeredCarousels = [];
+      const carousels = document.querySelectorAll('.C-carousel');
+      carousels.forEach((carousel, index) => {
+        registeredCarousels.push({  
+          id: `C-carousel-${index}`,
+          carousel: new Carousel(carousel, {
+            vertical: true,
+          }),
+        })
+      });
+      
+      const changeCarouselDirectionButton = document.querySelector('.js-change-carousel-direction');
+     
+      
+      
+    
+
+    function setupTypewriter(t) 
+    {
+        var HTML = t.innerHTML;
+    
+        t.innerHTML = "";
+    
+        var cursorPosition = 0,
+            tag = "",
+            writingTag = false,
+            tagOpen = false,
+            typeSpeed = 1,
+          tempTypeSpeed = 0;
+    
+        var type = function() {
+          
+            if (writingTag === true) {
+                tag += HTML[cursorPosition];
+            }
+    
+            if (HTML[cursorPosition] === "<") {
+                tempTypeSpeed = 0;
+                if (tagOpen) {
+                    tagOpen = false;
+                    writingTag = true;
+                } else {
+                    tag = "";
+                    tagOpen = true;
+                    writingTag = true;
+                    tag += HTML[cursorPosition];
+                }
+            }
+            if (!writingTag && tagOpen) {
+                tag.innerHTML += HTML[cursorPosition];
+            }
+            if (!writingTag && !tagOpen) {
+                if (HTML[cursorPosition] === " ") {
+                    tempTypeSpeed = 0;
+                }
+                else {
+                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                }
+                t.innerHTML += HTML[cursorPosition];
+            }
+            if (writingTag === true && HTML[cursorPosition] === ">") {
+                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                writingTag = false;
+                if (tagOpen) {
+                    var newSpan = document.createElement("span");
+                    t.appendChild(newSpan);
+                    newSpan.innerHTML = tag;
+                    tag = newSpan.firstChild;
+                }
+            }
+    
+            cursorPosition += 1;
+            if (cursorPosition < HTML.length - 1) {
+                setTimeout(type, tempTypeSpeed);
+            }
+            if(cursorPosition == HTML.length-1)
+            {
+                
+
+                for(var i = 0; i< document.getElementsByClassName("but").length ; i++)
+                {
+                    document.getElementsByClassName("but")[i].style.visibility = "visible";
+                }
+
+                const d = new Date();
+                
+                localStorage.setItem("myday",d.getDate());
+            }
+         
+        };
+    
+        return {
+            type: type
+            
+        };
+    }
+
+    const d = new Date();
+
+    var typer = document.getElementById("typewriter");
+
+    day = localStorage.getItem("myday")
+
+    let days = d.getDate();
+
+    if(day == null)
+    {
+        day = -1;        
+    }
+
+
+
+
+    if(day != days){
+
+
+        typewriter = setupTypewriter(typer);
+
+        typewriter.type();
+
+        
+    }else
+    {
+        for(var i = 0; i< document.getElementsByClassName("but").length ; i++)
+        {
+            document.getElementsByClassName("but")[i].style.visibility = "visible";
+        }
+    }
+
+ 
+    function comprobarboton()
+    {
+        if(document.getElementById("slide2").className.includes("active") || document.getElementById("slide3").className.includes("active") )
+        {
+            //document.getElementById("next").style.borderColor = "black";
+            document.getElementById("next").style.color = "black";
+            //document.getElementById("prev").style.borderColor = "black";
+            document.getElementById("prev").style.color = "black";
+
+
+        }else
+        {
+            //document.getElementById("next").style.borderColor = "white";
+            document.getElementById("next").style.color = "white";
+            //document.getElementById("prev").style.borderColor = "white";
+            document.getElementById("prev").style.color = "white";
+        }
+    }
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:30,
+        center:true,
+        stagePadding: 50,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+
+    
+
+	
+</script>
+
+</html>

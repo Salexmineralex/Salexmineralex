@@ -1,0 +1,35 @@
+
+{
+    
+
+    "projects":
+    {
+        "agora":
+        {
+            "name":"Agora"
+            
+        },
+        "sqlite":
+        {
+            "name":"SQLite"
+            
+        },
+        "minesweeper":
+        {
+            "name":"Minesweeper"
+            
+        },
+        "pokepairs":
+        {
+            "name":"Pokepairs"
+            
+        },
+        "ftp":
+        {
+            "name":"Server FTP"
+            
+        }
+    }
+
+
+}
