@@ -1,35 +1,18 @@
-
 {
-    
-
-    "projects":
-    {
-        "agora":
-        {
-            "name":"Agora"
-            
-        },
-        "sqlite":
-        {
-            "name":"SQLite"
-            
-        },
-        "minesweeper":
-        {
-            "name":"Minesweeper"
-            
-        },
-        "pokepairs":
-        {
-            "name":"Pokepairs"
-            
-        },
-        "ftp":
-        {
-            "name":"Server FTP"
-            
-        }
-    }
+	"projects": [{
+		"agora": {
+			"name": "Agora",
+			"time": "2 años",
+			"descrption": "Loquesea tal",
+			"languaje": "Android"
+		},
+		"Otro": {
+			"name": "Buscaminas",
+			"time": "3 meses",
+			"descrption": "Loquesea tal",
+			"languaje": "Java"
+		}
+	}]
 
 
 }

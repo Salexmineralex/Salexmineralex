@@ -87,7 +87,7 @@
         
   </div>
         <div id="slide3" class="C-slide">
-            <div style="font-size: medium; color:black" class="C-slide-title">
+            <div style="font-size: medium; color:white" class="C-slide-title">
 
                 I am Alejandro Sánchez Torres, a Junior Programmer, who tries to learn something new everyday.</br> </br>
                 Technician in Microcomputer Systems and Networks, and currently studying Multi-platform Applications Development. <br></br>
@@ -124,11 +124,18 @@
 <script type="text/javascript">
 
     var data;
-    //fetch('./data.json',{ mode: 'no-cors'})
-    //.then((response) => response.json()
-    //.then((json) => console.log(json)));
+    fetch('./data.json')
+    .then((response) => response.json()
+    .then((json) =>  console.log(json)
+   
+    ));
 
-    function loadJSON(callback) {   
+    function iterateprojects(json)
+    {
+      
+    }
+
+    /* { function loadJSON(callback) {   
         var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
         xobj.open('GET', './data.json', true);
@@ -155,11 +162,9 @@
     
     function setUpButtons()
     {
-        for (const [key, value] of Object.entries(data.projects)) {
-            console.log(`${key}: ${value}`);
-          }
+        
           
-    }
+    }  }*/
 
 
 
@@ -643,7 +648,7 @@
  
     function comprobarboton()
     {
-        if(document.getElementById("slide2").className.includes("active") || document.getElementById("slide3").className.includes("active") )
+        if(document.getElementById("slide2").className.includes("active") )
         {
             //document.getElementById("next").style.borderColor = "black";
             document.getElementById("next").style.color = "black";
