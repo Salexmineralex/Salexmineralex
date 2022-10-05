@@ -1,10 +1,21 @@
 {
     "projects": 
     [
-        {"name":"proyecto1",
+        {"name":"Agora",
+        "description":""},
+
+        {"name": "Minesweeper",
+        "description":""},
+
+        {"name":"FTP",
         "description":"cosas"},
 
-        {"name": "proyecto2",
+        {"name": "Poke Pairs",
+        "description":"cosas"},
+
+        {"name":"SQLITE",
         "description":"cosas"}
+
+        
     ]
 }

@@ -1,14 +1,36 @@
 var data;
+
 fetch('./data.json')
 .then((response) => response.json()
-.then((json) =>  console.log(json)
+.then((json) =>  iterateprojects(json) 
+
 
 ));
 
 function iterateprojects(json)
 {
+    data = json
+
+    // console.log(data.projects.length)
+
+    // for(i = 0; i < data.projects.length; i++)
+    // {
+
+    //     //<div> <a class="btne cta bg">Boton1</a> </div>
+    //     const div = document.createElement('div');
+    //     const button = document.createElement('a');
+    //     //navigationButton.setAttribute('type', 'button');
+    //     button.classList.add('btne');
+    //     button.classList.add('cta');
+    //     button.classList.add('bg');
+    //     button.text = data.projects[i].name
+    //     div.appendChild(button)
+    //     document.getElementById("owl-stage").appendChild(div)
+    //     console.log(data.projects[i].name)
+    // }
   
 }
+
 
 /* { function loadJSON(callback) {   
     var xobj = new XMLHttpRequest();
@@ -541,10 +563,8 @@ function comprobarboton()
 }
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:30,
-    center:true,
-    stagePadding: 50,
+    margin:10,
+    autoWidth:true,
     responsiveClass:true,
     responsive:{
         0:{
