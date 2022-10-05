@@ -1,18 +1,10 @@
 {
-	"projects": [{
-		"agora": {
-			"name": "Agora",
-			"time": "2 años",
-			"descrption": "Loquesea tal",
-			"languaje": "Android"
-		},
-		"Otro": {
-			"name": "Buscaminas",
-			"time": "3 meses",
-			"descrption": "Loquesea tal",
-			"languaje": "Java"
-		}
-	}]
+    "projects": 
+    [
+        {"name":"proyecto1",
+        "description":"cosas"},
 
-
+        {"name": "proyecto2",
+        "description":"cosas"}
+    ]
 }
