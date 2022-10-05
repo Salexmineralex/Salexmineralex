@@ -1,0 +1,35 @@
+*
+{
+    overflow-x: hidden;
+}
+
+.containerpes
+{
+    margin:0;
+    min-height:100vh;
+    min-width:99vw;
+}
+
+body
+{
+    margin:0
+}
+
+.fade-in-right{-webkit-animation:fade-in-right 2s cubic-bezier(.39,.575,.565,1.000) backwards;animation:fade-in-right 2s cubic-bezier(.39,.575,.565,1.000) backwards}
+
+@-webkit-keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+@font-face {
+    font-family: "Code";
+    src: url('../Fonts/CODEBold.otf');
+    }
+
+#projectName
+{
+    color:white;
+    margin:18vw ;
+    font-family: "Code";
+    
+    font-size: 8vw;
+    text-align: right
+}
