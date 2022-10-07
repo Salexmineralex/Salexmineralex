@@ -564,6 +564,8 @@ function comprobarboton()
 
 $('.owl-carousel').owlCarousel({
     margin:10,
+    stagePadding:50,
+    center:true,
     autoWidth:true,
     responsiveClass:true,
     responsive:{
@@ -571,12 +573,12 @@ $('.owl-carousel').owlCarousel({
             items:1,
             nav:true
         },
-        800:{
-            items:2,
+        700:{
+            items:1,
             nav:false
         },
         1000:{
-            items:3,
+            items:2,
             nav:true,
             loop:false
         }
