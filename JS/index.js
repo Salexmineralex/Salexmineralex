@@ -580,7 +580,7 @@ $('.owl-carousel').owlCarousel({
         1000:{
             items:2,
             nav:true,
-            loop:false
+            loop:true
         }
     }
 })
