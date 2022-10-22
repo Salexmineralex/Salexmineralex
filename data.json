@@ -1,21 +1,42 @@
 {
-    "projects": 
-    [
-        {"name":"Agora",
-        "description":""},
-
-        {"name": "Minesweeper",
-        "description":""},
-
-        {"name":"FTP",
-        "description":"cosas"},
-
-        {"name": "Poke Pairs",
-        "description":"cosas"},
-
-        {"name":"SQLITE",
-        "description":"cosas"}
-
-        
-    ]
-}
+    "Agora": {
+      "Name": "Agora",
+      "Description": "ADAD",
+      "PhotoRoute": "../Img/etc",
+      "Lenguaje": "Java",
+      "Framework": "Android Studio",
+      "Type": "Social Network"
+    },
+    "Minesweeper": {
+      "Name": "Minesweeper",
+      "Description": "ASDAD",
+      "PhotoRoute": "../Img/etc",
+      "Lenguaje": "Java",
+      "Framework": "Android Studio",
+      "Type": "Social Network"
+    },
+    "FTP": {
+      "Name": "FTP",
+      "Description": "ADAD",
+      "PhotoRoute": "../Img/etc",
+      "Lenguaje": "Java",
+      "Framework": "Android Studio",
+      "Type": "Social Network"
+    },
+    "Pokeapairs": {
+      "Name": "Pokeapairs",
+      "Description": "ADAD",
+      "PhotoRoute": "../Img/etc",
+      "Lenguaje": "Java",
+      "Framework": "Android Studio",
+      "Type": "Social Network"
+    },
+    "SQLITE": {
+      "Name": "SQLITE",
+      "Description": "ADAD",
+      "PhotoRoute": "../Img/etc",
+      "Lenguaje": "Java",
+      "Framework": "Android Studio",
+      "Type": "Social Network"
+    }
+  }

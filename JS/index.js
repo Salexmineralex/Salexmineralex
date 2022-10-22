@@ -7,6 +7,8 @@ fetch('./data.json')
 
 ));
 
+
+
 function iterateprojects(json)
 {
     data = json
@@ -155,6 +157,7 @@ class Carousel {
     onInitActions() {
       this.createSlideTrack();
       this.createNavigation();
+      this.createMousewheel()
       this.createNavigationButtons();
       this.updateCarousel();
       this.carousel.classList.add('initialized');
@@ -249,6 +252,11 @@ class Carousel {
       track.style.transform = translateValue;
   
     }
+
+   
+
+   
+   
   
     createNavigation () {
       const {
@@ -281,9 +289,48 @@ class Carousel {
   
       return navigationDot;
     }
+
+    createMousewheel()
+    {
+        
+      $(window).bind('mousewheel', function(event) {
+        console.log(registeredCarousels)
+        const { slides } = registeredCarousels[0]["carousel"];
+        const {currentSlide} = registeredCarousels[0]["carousel"].state
+        const numberOfSLides = slides.length;
+        const lastSlideIndex = numberOfSLides - 1;
+        if (event.originalEvent.wheelDelta >= 0) {
+          const slideToGo = currentSlide - 1;
+          if (slideToGo < 0) {
+            
+            if(!!registeredCarousels[0]["carousel"].settings.infinite) {
+         
+              return registeredCarousels[0]["carousel"].goTo(lastSlideIndex);
+            }
+            return;
+          } else {
+            registeredCarousels[0]["carousel"].goTo(slideToGo);
+          }
+        
+        }
+        else {
+          const slideToGo = currentSlide + 1;
+          if (slideToGo > lastSlideIndex) {
+            if(!!registeredCarousels[0]["carousel"].settings.infinite) {
+              return registeredCarousels[0]["carousel"].goTo(0);
+            }
+            return;
+          } else {
+            registeredCarousels[0]["carousel"].goTo(slideToGo);
+          }
+        }
+        });
+
+    }
   
     createNavigationButtons() {
       const createNavigationButton = (buttonType) => {
+        console.log(this)
         const { carousel } = this;
         const navigationButton = document.createElement('button');
         navigationButton.setAttribute('type', 'button');
@@ -292,11 +339,13 @@ class Carousel {
 
         navigationButton.style.visibility = "hidden"
         navigationButton.classList.add(`C-carousel-navigation-button--${buttonType}`);
+    
         navigationButton.addEventListener('click', () => {
           const { slides } = this;
           const { currentSlide } = this.state;
           const numberOfSLides = slides.length;
           const lastSlideIndex = numberOfSLides - 1;
+         
           
           if (buttonType === 'next') {
        
@@ -323,6 +372,7 @@ class Carousel {
             }
           }
         });
+
  
         if(buttonType == "next")
         {
@@ -357,6 +407,8 @@ class Carousel {
         createNavigationButton('next');
         createNavigationButton('prev');
       } 
+
+    
     }
   
     updateNavigation() {
@@ -426,8 +478,6 @@ class Carousel {
   
   const changeCarouselDirectionButton = document.querySelector('.js-change-carousel-direction');
  
-  
-  
 
 
 function setupTypewriter(t) 
@@ -585,5 +635,8 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+
+   
 
 
