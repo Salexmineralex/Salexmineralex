@@ -326,6 +326,10 @@ class Carousel {
         }
         });
 
+        $(document).on('touchmove', function() {
+          $(document).trigger('mousewheel');
+        });
+
     }
   
     createNavigationButtons() {
