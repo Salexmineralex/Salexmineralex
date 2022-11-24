@@ -326,7 +326,7 @@ class Carousel {
         }
         });
 
-        $(document).on('touchmove', function() {
+        $(window).on('touchmove', function() {
           $(document).trigger('mousewheel');
         });
 
