@@ -3,7 +3,10 @@ console.log(ProjectName)
 document.getElementById("sliderspes").setAttribute("project",ProjectName)
 
 
-fetch('../data.json')
+fetch('../JS/data.json',
+{
+    crossOrigin: null
+})
 .then((response) => response.json()
 .then((json) =>  changeString(json[ProjectName])
 
