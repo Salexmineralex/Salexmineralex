@@ -1,8 +1,9 @@
 {
+  
     "Agora": {
       "Name": "Agora",
       "Description": "ADAD",
-      "PhotoRoute": "../Img/etc",
+      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -10,7 +11,7 @@
     "Minesweeper": {
       "Name": "Minesweeper",
       "Description": "ASDAD",
-      "PhotoRoute": "../Img/etc",
+      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -18,7 +19,7 @@
     "FTP": {
       "Name": "FTP",
       "Description": "ADAD",
-      "PhotoRoute": "../Img/etc",
+      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -26,7 +27,7 @@
     "Pokeapairs": {
       "Name": "Pokeapairs",
       "Description": "ADAD",
-      "PhotoRoute": "../Img/etc",
+      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -34,7 +35,7 @@
     "SQLITE": {
       "Name": "SQLITE",
       "Description": "ADAD",
-      "PhotoRoute": "../Img/etc",
+      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
