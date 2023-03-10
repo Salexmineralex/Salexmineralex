@@ -3,7 +3,7 @@
     "Agora": {
       "Name": "Agora",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../imagenesproyectos/Comingsoon.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
