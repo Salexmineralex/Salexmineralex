@@ -35,7 +35,7 @@
     "SQLITE": {
       "Name": "SQLITE",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../sqliteimages/sqlite1.png", "../sqliteimages/sqlite2.png", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"

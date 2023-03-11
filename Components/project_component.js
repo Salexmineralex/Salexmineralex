@@ -59,7 +59,7 @@ class Slider extends React.Component {
 
  
     return (
-      <div className="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein" >
+      <div className="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein"   >
           <ul className="slider-container">
           {this.state.data.PhotoRoute.map((photo, index) => 
             <li className="slide-visible" key={index}>
@@ -75,7 +75,7 @@ class Slider extends React.Component {
                           </div>
                       </div>
                       <div className="col-md-6 col-xl-7">
-                          <img  src={photo} className={`card-img d-none d-md-block${index === 0 ? " slide-visible" : ""}`} loading="lazy" style={{ height: '100%',objectFit:'scale-down'}} alt="..."/>
+                          <img  src={photo} className={`card-img d-none d-md-block${index === 0 ? " slide-visible" : ""}`} loading="lazy" style={{ height: '100vh',objectFit:'scale-down'}} alt="..."/>
                           <img  src={photo} className={`card-img d-none d-md-none${index === 0 ? " slide-visible" : ""}`} loading="lazy" style={{ width: '100%',objectFit:'scale-down'}} alt="..."/>
                       </div>
                   </div>
