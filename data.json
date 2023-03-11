@@ -3,7 +3,7 @@
     "Agora": {
       "Name": "Agora",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/Comingsoon.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../imagenesproyectos/Comingsoon.png", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -27,7 +27,7 @@
     "Pokeapairs": {
       "Name": "Pokeapairs",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../pokeparisimages/pokepairs1.png", "../pokeparisimages/pokepairs2.png", "../pokeparisimages/pokeparis3.png"],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
