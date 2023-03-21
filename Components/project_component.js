@@ -9,13 +9,7 @@ class Slider extends React.Component {
     }
   }
   componentDidMount() {
-    if (typeof swiffyslider !== 'undefined') {
-      // the variable is defined
-      const script = document.createElement("script");
-      script.src = 'https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
+  
   
     fetch('../data.json')
     .then((response) => response.json())
@@ -59,10 +53,10 @@ class Slider extends React.Component {
 
  
     return (
-      <div className="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein"   >
+      <div className="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein">
           <ul className="slider-container">
           {this.state.data.PhotoRoute.map((photo, index) => 
-            <li className="slide-visible" key={index}>
+            <li className="" key={index}>
               <div className="card rounded-0 h-100" >
                   <div className="row g-0 h-100">
                       <div className="col-md-6 col-xl-5 d-flex align-items-center p-2 p-md-3 p-xl-5">
@@ -83,7 +77,7 @@ class Slider extends React.Component {
           </li>)}
         </ul>
         <button type="button" className="slider-nav" aria-label="Go left"></button>
-        <button type="button" className="slider-nav slider-nav-next" aria-label="Go left"></button>
+                <button type="button" className="slider-nav slider-nav-next" aria-label="Go Right"></button>
 
         <div className="slider-indicators">
           <button className="" aria-label="Go to slide"></button>
