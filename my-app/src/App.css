@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*
+{
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.containerpes
+{
+    margin:0;
+    min-height:100vh;
+    min-width:99vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body
+{
+    margin:0
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fade-in-right{-webkit-animation:fade-in-right 2s cubic-bezier(.39,.575,.565,1.000) backwards;animation:fade-in-right 2s cubic-bezier(.39,.575,.565,1.000) backwards}
+
+@-webkit-keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+@font-face {
+    font-family: "Code";
+    src: url('../Fonts/CODEBold.otf');
+    }
+
+#projectName
+{
+    color:white;
+    margin:18vw ;
+    font-family: "Code";
+    
+    font-size: 8vw;
+    text-align: right
 }
 
-.App-link {
-  color: #61dafb;
+
+  .fade-in-bottom{ font-size: 100%;   font-family: "Code";
+    -webkit-animation:fade-in-bottom 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom 2s cubic-bezier(.39,.575,.565,1.000) both}
+
+  
+@-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+img
+{
+    
+    height: 100vh;
+    width: 100vw;
+    object-fit: scale-down;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body
+{
+    margin: 5px;
+}
+
+@media screen and (max-width: 767px) 
+{
+    img
+    {
+        height: 50vh;
+        width: 50vw;
+    }
+}
+
+.card-title
+{
+    overflow-y: hidden;
 }
