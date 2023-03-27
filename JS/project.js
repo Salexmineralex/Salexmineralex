@@ -1,6 +1,7 @@
 var ProjectName = parent.document.URL.substring(parent.document.URL.indexOf('=')+1, parent.document.URL.length);
 console.log(ProjectName)
-document.getElementById("sliderspes").setAttribute("project",ProjectName)
+
+document.getElementById("slider").setAttribute("project",ProjectName)
 
 
 fetch('../data.json',

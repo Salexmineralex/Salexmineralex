@@ -1,4 +1,7 @@
 @media only screen and  (min-width: 700px) {
+  .social-menu {
+    padding: 50px;
+  }
   .social-menu ul{
     position: relative;
     top: 100%;
@@ -7,8 +10,11 @@
     margin: 0;
     transform: translate(-50%, -50%);
     display: flex;
-  }
+  };
+ 
 }
+
+
 
 @font-face {
   font-family: "Code";
@@ -431,6 +437,7 @@ html, body {
 	 background: #e37208;
 }
  
+
 .social-menu ul{
   position: relative;
   top: 50%;
