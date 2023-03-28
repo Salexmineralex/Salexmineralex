@@ -43,21 +43,20 @@ class Slider {
       const photo = this.state.data.PhotoRoute[i];
       const slideVisibleClass = i === 0 ? " slide-visible" : "";
       const slide = `
-        <li class="${slideVisibleClass}">
+        <li class="${slideVisibleClass}" style="max-height:100vh">
           <div class="card rounded-0 h-100">
             <div class="row g-0 h-100">
               <div class="col-md-6 col-xl-5 d-flex align-items-center p-2 p-md-3 p-xl-5">
                 <div class="card-body p-1 p-md-3 p-xl-5">
                   <p class="lead"></p>
-                  <h2 class="card-title" style="color: #DF1E1E;">${this.state.data.Name}</h2>
-                  <p class="card-text mt-3">Super fast lightweight slider and carousel with amazing touch support and user experience.</p>
-                  <p>Super simple setup using just markup and few powerful configuration options</p>
-                  <p class="card-text"><small class="text-muted">Remember to check out on mobile</small></p>
+                  <h2 class="card-title" style="color: #DF1E1E">${this.state.data.Name}</h2>
+                  <p class="card-text mt-3">${this.state.data.PhotoText[i]}</p>
+                  <p class="card-text"></p>
                 </div>
               </div>
-              <div class="col-md-6 col-xl-7">
-                <img src="${photo}" class="card-img d-none d-md-block${slideVisibleClass}" loading="lazy" style="height: 100vh; object-fit: scale-down;" alt="...">
-                <img src="${photo}" class="card-img d-none d-md-none${slideVisibleClass}" loading="lazy" style="width: 100%; object-fit: scale-down;" alt="...">
+              <div class="col-md-6 col-xl-7" style="max-width:90vh;max-height:100vh; text-align: center; ">
+                <img src="${photo}" class="card-img d-none d-md-block${slideVisibleClass}" loading="lazy" style="height: 100vh;  object-fit: fit;" alt="...">
+                <img src="${photo}" class="card-img d-none d-md-none${slideVisibleClass}" loading="lazy" style="width: 100vw; object-fit: fit;" alt="...">
               </div>
             </div>
           </div>

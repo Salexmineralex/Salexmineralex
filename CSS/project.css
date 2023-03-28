@@ -1,8 +1,13 @@
 *
 {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
 
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
 .containerpes
 {
@@ -68,3 +73,32 @@ img
 {
     overflow-y: hidden;
 }
+
+
+.fabs{
+    font-size: 30px;
+    line-height: 60px !important;
+    transition: .3s;
+    color: #000;
+  }
+  
+a:hover .fabs{
+    color: #fff;
+  }
+  
+a .fabs{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  }
+  
+
+  
+  a:hover .fabs{
+    background-color: rgba(0, 0, 0, 0.829);
+  }

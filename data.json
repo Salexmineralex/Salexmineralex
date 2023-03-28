@@ -11,7 +11,13 @@
     "Minesweeper": {
       "Name": "Minesweeper",
       "Description": "ASDAD",
-      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../minesweeperimages/mine1.png", "../minesweeperimages/mine2.png", "../minesweeperimages/mine3.png","../minesweeperimages/mine4.gif"],
+      "PhotoText": [
+        "I developed an Android Studio project that resembles the classic game Minesweeper. Players can select from three difficulty levels, including Easy, Medium, and Hard, each with a different number of boxes. The objective of the game is to uncover all the boxes without bombs to win.",
+        "To increase the game's excitement, I added a timer feature that allows players to compete with themselves. The faster they uncover all the boxes, the higher their score will be.", 
+        "The project includes concepts such as user interface management, event programming, algorithm implementation, and data management, among others..", 
+        "<a href='https://github.com/Salexmineralex/Minesweeper' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+       ],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Game"
@@ -19,7 +25,12 @@
     "FTP": {
       "Name": "FTP",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/fotostock.jpg", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../ftpimages/ftp1.png", "../ftpimages/ftp2.png", "../ftpimages/ftp3.png"],
+      "PhotoText": [
+       "FTP is a project created in Swing with Java, it is an FTP server to download files and upload them to a selected folder, the server is encrypted both symmetrically and asymmetrically.",
+       "From the server we choose the folder we want to start sharing, and from the client we can upload and download files.", 
+       "<a href='https://github.com/Salexmineralex/TCP_FTP_Encrypted' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+      ],
       "Lenguaje": "Java",
       "Framework": "Swing",
       "Type": "FTP Server and Client"
@@ -28,6 +39,12 @@
       "Name": "Pokeapairs",
       "Description": "ADAD",
       "PhotoRoute": ["../pokeparisimages/pokepairs1.png", "../pokeparisimages/pokepairs2.png", "../pokeparisimages/pokeparis3.png"],
+      "PhotoText": [
+        "I developed an Android Studio application that features a Pairs game with a Pokemon theme.",
+        "The game allows users to select from three difficulty levels, each with varying numbers of boxes.",
+        "The objective of the game is to uncover pairs of matching figures, which remain visible once discovered.",
+        "<a href='https://github.com/Salexmineralex/TCP_FTP_Encrypted' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+       ],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Game"
@@ -35,9 +52,17 @@
     "SQLITE": {
       "Name": "SQLITE",
       "Description": "ADAD",
-      "PhotoRoute": ["../sqliteimages/sqlite1.png", "../sqliteimages/sqlite2.png", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../sqliteimages/sqlite1.png", "../sqliteimages/sqlite2.png", "../sqliteimages/sqlite3.png","../sqliteimages/sqlite4.png","../sqliteimages/sqlite5.png","../sqliteimages/sqlite6.gif"],
+      "PhotoText": [
+        "I developed an Android Studio application that utilizes a local SQLITE database, user account creation and login system, and the ability to add movies to the database.",
+        "One of the challenges I encountered while developing this application was implementing the trailer search feature.",
+        "The project showcases my proficiency in mobile app development, database management, and user experience design.", 
+        "The application's user interface is user-friendly, making it easy for users to navigate the different features.", 
+        "The application also includes a puzzle game using the movie poster and a trailer search feature.", 
+        "<a href='https://github.com/Salexmineralex/Films_SQLITE' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+       ],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
-      "Type": "Social Network"
+      "Type": "Database Application"
     }
   }
