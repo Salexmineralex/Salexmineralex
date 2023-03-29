@@ -3,7 +3,13 @@
     "Agora": {
       "Name": "Agora",
       "Description": "ADAD",
-      "PhotoRoute": ["../imagenesproyectos/Comingsoon.png", "../imagenesproyectos/myphoto.jpg", "../imagenesproyectos/myphoto.jpg"],
+      "PhotoRoute": ["../agoraimages/Creacion-de-Cuenta.gif", "../agoraimages/Pestana-Planes.gif", "../agoraimages/Pestana-Perfil.gif","../agoraimages/ChatMensajes.gif"],
+         "PhotoText": [
+        "The objective of Ágora is to have an application where you can make plans with people who have similar interests to yours. The application proposes plans created by other users that you can accept or reject according to your interests. Ágora offers an alternative to the superficiality of default dating applications. The plans are a means or excuse for an end, which is to meet people based on their interests. <br><br>Ágora was the final degree project for the Development of Multiplatform Applications.</br>",
+        "Ágora is an application created in Android Studio. It consists of a registration and login screen and a ViewPager with four tabs: Plans, Create Plans, Profile, and Chat.", 
+        "The conclusion of the application development and what was learned is the complexity of having a good, clear, and clean organization.", 
+        "If you want to see more about the project, click on the button below to download the presentation <br><br><a download='Agora(English)' href='../agoraimages/Agora(English).pptx' target='blank'><i class='fabs fa-solid fa-file-arrow-down'></i></a>"
+       ],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Social Network"
@@ -38,12 +44,12 @@
     "Pokeapairs": {
       "Name": "Pokeapairs",
       "Description": "ADAD",
-      "PhotoRoute": ["../pokeparisimages/pokepairs1.png", "../pokeparisimages/pokepairs2.png", "../pokeparisimages/pokeparis3.png"],
+      "PhotoRoute": ["../pokeparisimages/poke1.png", "../pokeparisimages/poke2.png", "../pokeparisimages/poke3.png", "../pokeparisimages/poke4.gif"],
       "PhotoText": [
         "I developed an Android Studio application that features a Pairs game with a Pokemon theme.",
         "The game allows users to select from three difficulty levels, each with varying numbers of boxes.",
         "The objective of the game is to uncover pairs of matching figures, which remain visible once discovered.",
-        "<a href='https://github.com/Salexmineralex/TCP_FTP_Encrypted' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+        "<a href='https://github.com/Salexmineralex/PokePairs' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
        ],
       "Lenguaje": "Java",
       "Framework": "Android Studio",
