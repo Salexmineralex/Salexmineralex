@@ -3,7 +3,7 @@
     "Agora": {
       "Name": "Agora",
       "Description": "ADAD",
-      "PhotoRoute": ["../agoraimages/Creacion-de-Cuenta.gif", "../agoraimages/Pestana-Planes.gif", "../agoraimages/Pestana-Perfil.gif","../agoraimages/ChatMensajes.gif"],
+      "PhotoRoute": ["../agoraimages/creacioncuenta.gif", "../agoraimages/Pestana-Planes.gif", "../agoraimages/Pestana-Perfil.gif","../agoraimages/ChatMensajes.gif"],
          "PhotoText": [
         "The objective of Ágora is to have an application where you can make plans with people who have similar interests to yours. The application proposes plans created by other users that you can accept or reject according to your interests. Ágora offers an alternative to the superficiality of default dating applications. The plans are a means or excuse for an end, which is to meet people based on their interests. <br><br>Ágora was the final degree project for the Development of Multiplatform Applications.</br>",
         "Ágora is an application created in Android Studio. It consists of a registration and login screen and a ViewPager with four tabs: Plans, Create Plans, Profile, and Chat.", 
