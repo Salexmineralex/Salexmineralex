@@ -55,24 +55,8 @@ img
     object-fit: scale-down;
 }
 
-.card-body
-{
-    margin: 5px;
-}
 
-@media screen and (max-width: 767px) 
-{
-    img
-    {
-        height: 50vh;
-        width: 50vw;
-    }
-}
 
-.card-title
-{
-    overflow-y: hidden;
-}
 
 
 .fabs{
