@@ -20,7 +20,8 @@ class Slider {
       .then(function (json) {
         console.log(json)
         const projects = Object.values(json);
-        const projectData = projects.find((project) => project.Name === self.props.project);
+        const projectData = projects.find((project) => project.Description === self.props.project);
+        console.log(projectData);
         self.setState({ data: projectData },
         );
       });
@@ -49,7 +50,7 @@ class Slider {
               <div class="col-md-6 col-xl-5 d-flex align-items-center p-2 p-md-3 p-xl-5">
                 <div class="card-body p-1 p-md-3 p-xl-5">
                   <p class="lead"></p>
-                  <h2 class="card-title" style="color: #DF1E1E">${this.state.data.Name}</h2>
+                  <h2 class="card-title" style="color: #DF1E1E;padding-bottom:20px;">${this.state.data.Name}</h2>
                   <p class="card-text mt-3">${this.state.data.PhotoText[i]}</p>
                   <p class="card-text"></p>
                 </div>

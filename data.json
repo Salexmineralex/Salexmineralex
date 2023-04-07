@@ -2,7 +2,7 @@
   
     "Agora": {
       "Name": "Agora",
-      "Description": "ADAD",
+      "Description": "Agora",
       "PhotoRoute": ["../agoraimages/creacioncuenta.gif", "../agoraimages/Pestana-Planes.gif", "../agoraimages/Pestana-Perfil.gif","../agoraimages/ChatMensajes.gif"],
          "PhotoText": [
         "The objective of Ágora is to have an application where you can make plans with people who have similar interests to yours. The application proposes plans created by other users that you can accept or reject according to your interests. Ágora offers an alternative to the superficiality of default dating applications. The plans are a means or excuse for an end, which is to meet people based on their interests. <br><br>Ágora was the final degree project for the Development of Multiplatform Applications.</br>",
@@ -16,7 +16,7 @@
     },
     "Minesweeper": {
       "Name": "Minesweeper",
-      "Description": "ASDAD",
+      "Description": "Minesweeper",
       "PhotoRoute": ["../minesweeperimages/mine1.png", "../minesweeperimages/mine2.png", "../minesweeperimages/mine3.png","../minesweeperimages/mine4.gif"],
       "PhotoText": [
         "I developed an Android Studio project that resembles the classic game Minesweeper. Players can select from three difficulty levels, including Easy, Medium, and Hard, each with a different number of boxes. The objective of the game is to uncover all the boxes without bombs to win.",
@@ -30,7 +30,7 @@
     },
     "FTP": {
       "Name": "FTP",
-      "Description": "ADAD",
+      "Description": "FTP",
       "PhotoRoute": ["../ftpimages/ftp1.png", "../ftpimages/ftp2.png", "../ftpimages/ftp3.png"],
       "PhotoText": [
        "FTP is a project created in Swing with Java, it is an FTP server to download files and upload them to a selected folder, the server is encrypted both symmetrically and asymmetrically.",
@@ -43,7 +43,7 @@
     },
     "Pokeapairs": {
       "Name": "Pokeapairs",
-      "Description": "ADAD",
+      "Description": "Pokeapairs",
       "PhotoRoute": ["../pokeparisimages/poke1.png", "../pokeparisimages/poke2.png", "../pokeparisimages/poke3.png", "../pokeparisimages/poke4.gif"],
       "PhotoText": [
         "I developed an Android Studio application that features a Pairs game with a Pokemon theme.",
@@ -57,7 +57,7 @@
     },
     "SQLITE": {
       "Name": "SQLITE",
-      "Description": "ADAD",
+      "Description": "SQLITE",
       "PhotoRoute": ["../sqliteimages/sqlite1.png", "../sqliteimages/sqlite2.png", "../sqliteimages/sqlite3.png","../sqliteimages/sqlite4.png","../sqliteimages/sqlite5.png","../sqliteimages/sqlite6.gif"],
       "PhotoText": [
         "I developed an Android Studio application that utilizes a local SQLITE database, user account creation and login system, and the ability to add movies to the database.",
@@ -70,5 +70,19 @@
       "Lenguaje": "Java",
       "Framework": "Android Studio",
       "Type": "Database Application"
+    },
+    "SFML": {
+      "Name": "Space Invaders",
+      "Description": "SFML",
+      "PhotoRoute": ["../sfmlimages/sfml1.png", "../sfmlimages/sfml2.png", "../sfmlimages/sfml3.png","../sfmlimages/sfml4.gif"],
+      "PhotoText": [
+        "This project is a modified version of Space Invaders with waves, an exponential difficulty increase, and a life bar instead of three lives, instead of having three lives like the original game, the player has a life bar that decreases as enemies hit them. Once the health reaches zero, a GameOver screen appears.",
+        "The 'Main' section contains a while loop that continues running as long as the game is not closed. The 'Game' section initializes all subsystems and executes the update method, which handles the game's logic, drawing, and screen clearing.",
+        "The controls are simple, with the arrow keys used to move the spaceship, spacebar to shoot, 'R' to restart the game, and 'Escape' to exit.", 
+        "<a href='https://github.com/Salexmineralex/SFML_SpaceInvaderClone' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+       ],
+      "Lenguaje": "C++",
+      "Framework": "SFML",
+      "Type": "Videogame"
     }
   }
