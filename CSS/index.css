@@ -250,6 +250,7 @@ html, body {
   margin: 4px;
   cursor: pointer;
   border-radius: 50%;
+  border: black solid 1px;
 }
 .C-navigation__dot.active {
   background: #33f;
@@ -492,5 +493,6 @@ html, body {
 
 
 .shake-vertical{-webkit-animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) infinite both;animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) infinite both}
+
 
 

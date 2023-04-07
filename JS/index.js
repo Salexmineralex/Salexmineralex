@@ -457,6 +457,15 @@ class Carousel {
       this.setState({
         currentSlide: index,
       }, () => {
+ 
+   
+        if(document.getElementById("slide"+eval(this.state.currentSlide+1)) == "slide2")
+        {
+          document.getElementsByClassName("C-carousel-navigation-button").style.color = black
+        }else
+        {
+          document.getElementsByClassName("C-carousel-navigation-button").style.color = white
+        };
         //console.log('Current slide is now: ', this.state.currentSlide);
       });
     }
