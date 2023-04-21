@@ -67,7 +67,7 @@ function setUpButtons()
 
 
 
-
+var varSpeedMouse = 50;
 
 class Carousel {
     constructor(el, options = {}) {
@@ -532,12 +532,12 @@ function setupTypewriter(t)
                 tempTypeSpeed = 0;
             }
             else {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                tempTypeSpeed = (Math.random() * typeSpeed) + varSpeedMouse;
             }
             t.innerHTML += HTML[cursorPosition];
         }
         if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+            tempTypeSpeed = (Math.random() * typeSpeed) + varSpeedMouse;
             writingTag = false;
             if (tagOpen) {
                 var newSpan = document.createElement("span");
@@ -589,12 +589,12 @@ if(day == null)
 
 
 
+
 if(day != days){
 
+  typewriter = setupTypewriter(typer);
 
-    typewriter = setupTypewriter(typer);
-
-    typewriter.type();
+  typewriter.type();
 
     
 }else
@@ -604,6 +604,30 @@ if(day != days){
         document.getElementsByClassName("but")[i].style.visibility = "visible";
     }
 }
+
+$('body').on('mousedown mouseup', function mouseState(e) {
+  if (e.type == "mousedown") {
+      //code triggers on hold
+      varSpeedMouse = 0;
+  }else
+  {
+      varSpeedMouse = 50;
+  }
+});
+
+$('body').on('keyup keydown',function(e)
+{
+
+  if (e.type == "keydown" &&
+  e.code == "Space"     
+) {
+   varSpeedMouse = 0;
+   console.log(e.type)
+}else
+{
+  varSpeedMouse = 50;
+}
+});
 
 
 function comprobarboton()
