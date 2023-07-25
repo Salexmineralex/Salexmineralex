@@ -67,7 +67,7 @@ class Slider {
     }
 
     const slider = `
-      <div class="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein">
+      <div style="display:block" class="swiffy-slider slider-nav-round slider-nav-animation slider-nav-animation-fadein">
         <ul class="slider-container">
           ${slides.join('')}
         </ul>
