@@ -56,8 +56,8 @@ class Slider {
                 </div>
               </div>
               <div class="col-md-6 col-xl-7" style="max-width:90vh;max-height:100vh; text-align: center; ">
-                <img src="${photo}" class="card-img d-none d-md-block${slideVisibleClass}" loading="lazy" style="height: 100vh;  object-fit: fit;" alt="...">
-                <img src="${photo}" class="card-img d-none d-md-none${slideVisibleClass}" loading="lazy" style="width: 100vw; object-fit: fit;" alt="...">
+                <img src="${photo}" class="card-img  d-md-block${slideVisibleClass}" loading="lazy" style="height: 100vh;  object-fit: fit;" alt="...">
+                
               </div>
             </div>
           </div>
