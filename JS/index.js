@@ -67,7 +67,7 @@ function setUpButtons()
 
 
 
-var varSpeedMouse = 50;
+var varSpeedMouse = 3;
 
 class Carousel {
     constructor(el, options = {}) {
@@ -503,7 +503,7 @@ function setupTypewriter(t)
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 1,
+        typeSpeed = 0.1,
       tempTypeSpeed = 0;
 
     var type = function() {
@@ -611,7 +611,7 @@ $('body').on('mousedown mouseup', function mouseState(e) {
       varSpeedMouse = 0;
   }else
   {
-      varSpeedMouse = 50;
+      varSpeedMouse = 3;
   }
 });
 
@@ -625,7 +625,7 @@ $('body').on('keyup keydown',function(e)
    console.log(e.type)
 }else
 {
-  varSpeedMouse = 50;
+  varSpeedMouse = 3;
 }
 });
 
