@@ -529,15 +529,15 @@ function setupTypewriter(t)
         }
         if (!writingTag && !tagOpen) {
             if (HTML[cursorPosition] === " ") {
-                tempTypeSpeed = 0;
+                tempTypeSpeed = 0.001;
             }
             else {
-                tempTypeSpeed = (Math.random() * typeSpeed) + varSpeedMouse;
+                tempTypeSpeed = (Math.random() * 0.001); //+ varSpeedMouse;
             }
             t.innerHTML += HTML[cursorPosition];
         }
         if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + varSpeedMouse;
+            tempTypeSpeed = (Math.random() * 0.001) ;//+ varSpeedMouse;
             writingTag = false;
             if (tagOpen) {
                 var newSpan = document.createElement("span");
