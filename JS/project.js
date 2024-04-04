@@ -25,3 +25,16 @@ function changeString(data)
  
 
 }
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const projectName = document.getElementById('projectName');
+    const projectNameText = projectName.textContent;
+    const containerWidth = projectName.parentElement.offsetWidth; // Get container width
+
+    // Calculate ideal font size based on container width and text length
+    const fontSize = Math.min(100, containerWidth / projectNameText.length);
+
+    // Set the font size dynamically
+    projectName.style.fontSize = fontSize + 'px';
+});

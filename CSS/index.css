@@ -212,11 +212,15 @@ html, body {
   border-radius: 0;
 }
 
-.C-slide:nth-child(2) {
+.C-slide:nth-child(2)  {
   background-color: white;
 }
 
 .C-slide:nth-child(3) {
+  background-color: white;
+}
+
+.C-slide:nth-child(4) {
   background-color: black;
 }
 

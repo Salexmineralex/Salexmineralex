@@ -84,5 +84,19 @@
       "Lenguaje": "C++",
       "Framework": "SFML",
       "Type": "Videogame"
+    },
+    "InTheNameOfGod": {
+      "Name": "In The Name Of God",
+      "Description": "TFM of my Master in Videogame Programming",
+      "PhotoRoute": ["../sfmlimages/sfml1.png", "../sfmlimages/sfml2.png", "../sfmlimages/sfml3.png","../sfmlimages/sfml4.gif"],
+      "PhotoText": [
+        "This project is a modified version of Space Invaders with waves, an exponential difficulty increase, and a life bar instead of three lives, instead of having three lives like the original game, the player has a life bar that decreases as enemies hit them. Once the health reaches zero, a GameOver screen appears.",
+        "The 'Main' section contains a while loop that continues running as long as the game is not closed. The 'Game' section initializes all subsystems and executes the update method, which handles the game's logic, drawing, and screen clearing.",
+        "The controls are simple, with the arrow keys used to move the spaceship, spacebar to shoot, 'R' to restart the game, and 'Escape' to exit.", 
+        "<a href='https://github.com/Salexmineralex/SFML_SpaceInvaderClone' target='blank'><i class=' fabs fa-brands fa-github'></i></a>"
+       ],
+      "Lenguaje": "C++",
+      "Framework": "Unreal",
+      "Type": "Videogame"
     }
   }
