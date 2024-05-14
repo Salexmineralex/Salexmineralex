@@ -215,10 +215,15 @@ html, body {
 .C-slide:nth-child(2) {
   background-color: white;
 }
-
 .C-slide:nth-child(3) {
+  background-color: white;
+}
+
+#slide4
+{
   background-color: black;
 }
+
 
 
 
