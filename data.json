@@ -41,7 +41,7 @@
       "Framework": "Swing",
       "Type": "FTP Server and Client"
     },
-    "Pokeapairs": {
+    "Pokepairs": {
       "Name": "Pokeapairs",
       "Description": "Pokeapairs",
       "PhotoRoute": ["../pokeparisimages/poke1.png", "../pokeparisimages/poke2.png", "../pokeparisimages/poke3.png", "../pokeparisimages/poke4.gif"],
