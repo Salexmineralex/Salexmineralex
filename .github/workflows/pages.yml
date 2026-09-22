@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   deploy:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,8 +33,23 @@ jobs:
       - name: Disable Jekyll
         run: touch out/.nojekyll
 
-      - name: Publish
+      - name: Publish the gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+
+      - name: Publish onto main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf _next about contact experience hackathons work 404
+          rm -f index.html index.txt 404.html icon.svg
+          cp -a out/. .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Site already published"
+            exit 0
+          fi
+          git commit -m "Publish the portfolio site"
+          git push
