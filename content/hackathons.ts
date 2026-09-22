@@ -1,3 +1,5 @@
+import data from "./hackathons.json";
+
 export type Competition = {
   id: string;
   title: string;
@@ -7,27 +9,4 @@ export type Competition = {
   hrefLabel?: string;
 };
 
-export const hackathons: Competition[] = [
-  {
-    id: "hackspain",
-    title: "HackSpain",
-    meta: "THEKER Robotics",
-    points: [
-      "With Rómulo García, Miguel García González, and Juan Diego Gómez Labajos, built XFold: a robot that repositions, irons, discards, folds, and packs clothes.",
-    ],
-    href: "https://lnkd.in/p/ev-QEBKM",
-    hrefLabel: "Post",
-  },
-  {
-    id: "cursor-happyrobot",
-    title: "Cursor × HappyRobot",
-    meta: "2nd place",
-    points: ["Built an application in three hours with Cursor and HappyRobot."],
-  },
-  {
-    id: "trijam",
-    title: "Trijam",
-    meta: "Game jam",
-    points: ["Made a video game in three hours around a closed theme."],
-  },
-];
+export const hackathons = data as Competition[];
