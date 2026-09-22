@@ -1,25 +1,26 @@
 {
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "swiffy-slider": "^1.6.0"
-  },
-  "name": "salexmineralex-portfolio---copia",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "salexmineralex",
+  "version": "2.0.0",
+  "private": true,
+  "description": "DVD menu portfolio for Alejandro Sánchez Torres",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Salexmineralex/Salexmineralex.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Salexmineralex/Salexmineralex/issues"
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
-  "homepage": "https://github.com/Salexmineralex/Salexmineralex#readme",
-  "description": ""
+  "devDependencies": {
+    "@types/node": "^22.17.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  }
 }

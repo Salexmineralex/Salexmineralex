@@ -1,0 +1,17 @@
+export const profile = {
+  name: "Alejandro Sánchez Torres",
+  role: "Software Engineer",
+  location: "Tres Cantos, Madrid",
+  paragraphs: [
+    "I am Alejandro Sánchez Torres, a software engineer in Tres Cantos, Madrid. I build backend systems for banking, aerospace, and defense.",
+    "My interest in software started with video games and turned into designing secure, scalable systems with Java and .NET.",
+  ],
+  studies: [
+    "Master's in Game Programming, The Core School, Madrid, 2022–2023",
+    "Higher Technician in Multi-platform Application Development, IES Virgen de la Paloma, 2020–2022",
+    "Microcomputer Systems and Networks, IES José Luis Sampedro, 2017–2019",
+  ],
+  skills:
+    "Java, Python, C++, C#, Spring, JPA, Keycloak, CI/CD, SQL, MongoDB, Unreal",
+  interests: "Videogames, cinema, Greek and Norse mythology, analog photography.",
+};
