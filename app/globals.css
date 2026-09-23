@@ -50,9 +50,9 @@ a {
   border-radius: 36px;
   overflow: hidden;
   box-shadow:
-    inset 10px 0 28px rgba(255, 40, 40, 0.22),
-    inset -10px 0 28px rgba(40, 80, 255, 0.22),
-    inset 0 0 140px rgba(0, 0, 0, 0.72);
+    inset 8px 0 18px rgba(255, 40, 40, 0.08),
+    inset -8px 0 18px rgba(40, 80, 255, 0.08),
+    inset 0 0 80px rgba(0, 0, 0, 0.35);
 }
 
 .crt {
@@ -77,47 +77,47 @@ a {
 .crt-scan {
   background: repeating-linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.55) 0 1px,
-    transparent 1px 2px
+    rgba(0, 0, 0, 0.28) 0 1px,
+    transparent 1px 3px
   );
-  opacity: 0.8;
-  animation: crt-flicker 0.18s steps(2, end) infinite;
+  opacity: 0.35;
+  animation: crt-flicker 0.45s steps(2, end) infinite;
 }
 
 .crt-rgb {
   background: repeating-linear-gradient(
     90deg,
-    rgba(255, 0, 40, 0.08) 0 1px,
+    rgba(255, 0, 40, 0.04) 0 1px,
     transparent 1px 2px,
-    rgba(40, 80, 255, 0.08) 2px 3px,
+    rgba(40, 80, 255, 0.04) 2px 3px,
     transparent 3px 4px
   );
   mix-blend-mode: screen;
-  opacity: 0.85;
+  opacity: 0.4;
 }
 
 .crt-sweep {
   inset: auto 0 auto 0;
-  height: 28%;
+  height: 22%;
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(255, 176, 0, 0.09),
+    rgba(255, 176, 0, 0.035),
     transparent
   );
-  animation: crt-sweep 5.5s linear infinite;
+  animation: crt-sweep 9s linear infinite;
 }
 
 .crt-vignette {
   background:
-    radial-gradient(ellipse at center, transparent 28%, rgba(0, 0, 0, 0.78) 100%),
-    linear-gradient(rgba(255, 176, 0, 0.05), rgba(255, 176, 0, 0.02));
+    radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, 0.38) 100%),
+    linear-gradient(rgba(255, 176, 0, 0.02), transparent);
 }
 
 .crt-noise {
-  opacity: 0.22;
+  opacity: 0.07;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
-  animation: crt-noise 0.16s steps(2, end) infinite;
+  animation: crt-noise 0.45s steps(2, end) infinite;
   mix-blend-mode: overlay;
 }
 
@@ -142,7 +142,7 @@ a {
       transparent 1px 3px
     );
   mix-blend-mode: screen;
-  animation: crt-tear 3.2s linear infinite;
+  animation: crt-tear 8s linear infinite;
 }
 
 .crt-tear-b {
@@ -153,11 +153,11 @@ a {
 .crt-flash {
   mix-blend-mode: screen;
   opacity: 0;
-  animation: crt-flash 3.2s linear infinite;
+  animation: crt-flash 8s linear infinite;
 }
 
 html:not(.crt-off) .stage {
-  animation: crt-jolt 3.2s linear infinite;
+  animation: crt-jolt 8s linear infinite;
 }
 
 html.crt-off .crt {
@@ -194,13 +194,12 @@ html.white.crt-off .frame {
   box-shadow: 0 12px 36px rgba(22, 22, 22, 0.06);
 }
 
-html.white .boot,
 html.white .film img {
   background: var(--bg);
 }
 
 html.white .crt-scan {
-  opacity: 0.28;
+  opacity: 0.16;
 }
 
 html.white .crt-vignette {
@@ -245,14 +244,26 @@ html.white .crt-noise {
   color: var(--muted);
 }
 
-.footer a {
-  color: var(--paper);
-  text-decoration: none;
+.top-id {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
 }
 
-.footer a:hover,
-.footer a:focus-visible {
+.back-link {
   color: var(--amber);
+  text-decoration: none;
+  border: 1px solid var(--amber);
+  border-radius: 4px;
+  padding: 0.28rem 0.5rem;
+  line-height: 1;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  background: var(--amber);
+  color: var(--bg);
 }
 
 .top-tools {
@@ -541,66 +552,6 @@ html.white .crt-noise {
   color: var(--paper);
 }
 
-.boot {
-  position: fixed;
-  inset: 0;
-  z-index: 20;
-  display: grid;
-  place-items: center;
-  background: #050505;
-  overflow: hidden;
-}
-
-.boot-bars,
-.boot-play,
-.boot-id {
-  opacity: 0;
-}
-
-.boot.is-playing .boot-bars,
-.boot.is-playing .boot-play,
-.boot.is-playing .boot-id {
-  opacity: 1;
-}
-
-.boot-bars {
-  position: absolute;
-  inset: -20px 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0 7px,
-    rgba(255, 176, 0, 0.18) 7px 8px,
-    transparent 8px 16px,
-    rgba(232, 228, 220, 0.08) 16px 18px
-  );
-}
-
-.boot.is-playing .boot-bars {
-  animation: vhs-track 0.38s steps(2, end) infinite;
-}
-
-.boot-play {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  font-size: clamp(3rem, 12vw, 6.5rem);
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-.boot-id {
-  position: absolute;
-  z-index: 1;
-  left: 1.25rem;
-  bottom: 1.25rem;
-  margin: 0;
-  color: var(--muted);
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -730,10 +681,8 @@ html.white .crt-noise {
 
 @keyframes crt-flicker {
   0%,
-  100% { opacity: 0.5; }
-  47% { opacity: 0.46; }
-  50% { opacity: 0.68; }
-  53% { opacity: 0.44; }
+  100% { opacity: 0.35; }
+  50% { opacity: 0.42; }
 }
 
 @keyframes crt-sweep {
@@ -748,116 +697,82 @@ html.white .crt-noise {
 
 @keyframes crt-jolt {
   0%,
-  7%,
-  10%,
-  36%,
-  39%,
-  70%,
-  74%,
+  18%,
+  21%,
+  62%,
+  65%,
   100% {
     transform: none;
-    filter: none;
   }
-  8% {
-    transform: translateX(-7px);
-    filter: contrast(1.25) saturate(1.4);
+  19% {
+    transform: translateX(-2px);
   }
-  9% {
-    transform: translateX(9px) skewX(-1deg);
+  20% {
+    transform: translateX(2px);
   }
-  37% {
-    transform: translateX(6px) skewX(0.6deg);
+  63% {
+    transform: translateX(1px);
   }
-  38% {
-    transform: translateX(-8px);
-  }
-  71% {
-    transform: translate(4px, -2px);
-  }
-  72% {
-    transform: translateX(-5px) skewX(0.4deg);
+  64% {
+    transform: translateX(-1px);
   }
 }
 
 @keyframes crt-tear {
   0%,
-  7%,
-  10%,
+  18%,
+  21%,
   100% {
     opacity: 0;
     transform: none;
   }
-  8% {
-    opacity: 1;
-    top: 28%;
-    transform: translateX(-16px);
+  19% {
+    opacity: 0.35;
+    top: 34%;
+    transform: translateX(-6px);
   }
-  9% {
-    opacity: 0.85;
-    top: 31%;
-    transform: translateX(12px);
+  20% {
+    opacity: 0.2;
+    top: 36%;
+    transform: translateX(4px);
   }
 }
 
 @keyframes crt-tear-b {
   0%,
-  36%,
-  39%,
-  70%,
-  74%,
+  62%,
+  65%,
   100% {
     opacity: 0;
     transform: none;
   }
-  37% {
-    opacity: 1;
+  63% {
+    opacity: 0.28;
     top: 58%;
-    transform: translateX(18px);
+    transform: translateX(5px);
   }
-  38% {
-    opacity: 0.7;
-    top: 64%;
-    transform: translateX(-10px);
-  }
-  71% {
-    opacity: 1;
-    top: 42%;
-    transform: translateX(-14px) scaleY(1.8);
-  }
-  72% {
+  64% {
     opacity: 0;
   }
 }
 
 @keyframes crt-flash {
   0%,
-  7%,
-  10%,
-  36%,
-  39%,
+  18%,
+  21%,
   100% {
     opacity: 0;
     background: transparent;
   }
-  8%,
-  37% {
-    opacity: 1;
+  19% {
+    opacity: 0.45;
     background: linear-gradient(
       90deg,
-      rgba(255, 20, 40, 0.22),
-      transparent 28%,
-      transparent 72%,
-      rgba(40, 80, 255, 0.22)
+      rgba(255, 20, 40, 0.08),
+      transparent 30%,
+      transparent 70%,
+      rgba(40, 80, 255, 0.08)
     );
-  }
-}
-
-@keyframes vhs-track {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(18px);
   }
 }
 
@@ -908,7 +823,6 @@ html.white .crt-noise {
   .menu a,
   .menu li,
   .scene,
-  .boot-bars,
   .stage,
   .crt-scan,
   .crt-rgb,

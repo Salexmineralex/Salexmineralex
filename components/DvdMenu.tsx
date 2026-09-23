@@ -41,7 +41,7 @@ export function DvdMenu({
     <nav className="menu-block" aria-label={kicker} ref={navRef}>
       <p className="kicker">{kicker}</p>
       <p className="sr-only">
-        Use arrow keys to move, Enter to open, and Escape to go back.
+        Use j and k or the arrow keys to move, l or Enter to open, and h or Escape to go back. gg jumps to the first title, G to the last.
       </p>
       <ul className="menu">
         {items.map((item, itemIndex) => {

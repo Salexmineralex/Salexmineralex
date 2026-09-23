@@ -28,10 +28,10 @@ export function MenuShell({ children }: { children: React.ReactNode }) {
   const atHome = path === "/";
   const back = backHrefFor(pathname);
   const hint = atHome
-    ? "Arrows move · Enter open"
+    ? "j k move · l open"
     : path === "/experience" || path === "/hackathons"
-      ? "Enter details · Esc back"
-      : "Esc back";
+      ? "l details · h back"
+      : "h back";
   const [crt, setCrt] = useState(true);
   const [white, setWhite] = useState(false);
 
@@ -68,9 +68,16 @@ export function MenuShell({ children }: { children: React.ReactNode }) {
     <div className="bezel">
       <div className="frame">
         <header className="topbar">
-          <span>
-            AST-01
-            <span className="top-name"> · Alejandro Sánchez Torres</span>
+          <span className="top-id">
+            {atHome ? null : (
+              <Link href={back} className="back-link">
+                Back
+              </Link>
+            )}
+            <span>
+              AST-01
+              <span className="top-name"> · Alejandro Sánchez Torres</span>
+            </span>
           </span>
           <span className="top-tools">
             <button
@@ -107,7 +114,13 @@ export function MenuShell({ children }: { children: React.ReactNode }) {
         </div>
         <footer className="footer">
           <span>{hint}</span>
-          {atHome ? <span>Tres Cantos</span> : <Link href={back}>Back</Link>}
+          {atHome ? (
+            <span>Tres Cantos</span>
+          ) : (
+            <Link href={back} className="back-link">
+              Back
+            </Link>
+          )}
         </footer>
       </div>
     </div>

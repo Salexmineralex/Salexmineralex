@@ -44,7 +44,7 @@ export default function RootLayout({
     >
       <body>
         <Script id="crt-pref" strategy="beforeInteractive">
-          {`(function(){try{var root=document.documentElement;if(localStorage.getItem("ast-crt")==="off")root.classList.add("crt-off");if(localStorage.getItem("ast-white")==="on")root.classList.add("white")}catch(e){}})()`}
+          {`(function(){try{var root=document.documentElement;if(localStorage.getItem("ast-crt-v")!=="2"){localStorage.removeItem("ast-crt");localStorage.setItem("ast-crt-v","2")}if(localStorage.getItem("ast-crt")==="off")root.classList.add("crt-off");if(localStorage.getItem("ast-white")==="on")root.classList.add("white")}catch(e){}})()`}
         </Script>
         <MenuShell>{children}</MenuShell>
       </body>
